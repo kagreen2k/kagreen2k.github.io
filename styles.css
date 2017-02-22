@@ -14,10 +14,32 @@ table {
   color: white;
 }
 
-div {
-  font-size: 150%;
+.company-name {
+/*  font-size: 150%; */
 }
 
-.linked-in-link img {
+.linked-in-link {
   margin-top: 5px;
+}
+
+.linked-in-link span {
+  position: relative;
+  top: -15;
+  font-family: sans-serif;
+  margin-right: 10px;
+  font-size: 75%;
+}
+
+#fadeText1 {
+  display: block;
+  font-size: 150%;
+  position: relative;
+  top: 12;
+}
+
+#fadeText2 {
+  display: block;
+  font-size: 150%;
+  position: relative;
+  top: -12;
 }

@@ -3,19 +3,55 @@
     <title>Ken Green Technology Consulting</title>
     <link rel="shortcut icon" type="image/png" href="./favicon.png">
     <link rel="stylesheet" href="./styles.css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.js"></script>
+
+    <script type="text/javascript">
+
+      var TOTAL_TIME = 3000;
+
+      var fadeFunction = function() {
+
+        var binaryState = false;
+
+        return function() {
+
+          if (binaryState) {
+            $('#fadeText1').fadeOut(TOTAL_TIME);
+            $('#fadeText2').fadeIn(TOTAL_TIME);
+            binaryState = false;
+          } else {
+            $('#fadeText1').fadeIn(TOTAL_TIME);
+            $('#fadeText2').fadeOut(TOTAL_TIME);
+            binaryState = true;
+          }
+        }
+      }();
+
+      $(document).ready(fadeFunction);
+      setInterval(fadeFunction, TOTAL_TIME);
+    </script>
+
   </head>
   <body>
     <table>
-      <tr><td>Less Is More</td></tr>
-        <tr class="bottom-half">
-          <td>
-            <div>Ken Green</div>
-            <div>Technology Consulting</div>
-              <a class="linked-in-link" href="https://linkedin.com/in/ken-green-tech">
-                <img src="./In-2CRev-34px-R.png"/>
-              </a>
-          </td>
-        </tr>
+      <tr>
+        <td>
+          <span id="fadeText1">Less Is More</span>
+          <span id="fadeText2">Simple Is Better</span>
+        </td>
+      </tr>
+      <tr class="bottom-half">
+        <td>
+          <h1 class="company-name">Ken Green</h1>
+          <h1 class="company-name">Technology Consulting</h1>
+          <div  class="linked-in-link">
+            <a href="https://linkedin.com/in/ken-green-tech">
+              <span>view my LinkedIn profile</span><img src="./In-2CRev-34px-R.png"/>
+            </a>
+          </div>
+        </td>
+      </tr>
     </table>
   </body>
 </html>
