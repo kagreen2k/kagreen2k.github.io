@@ -15,11 +15,13 @@ table {
 }
 
 .company-name {
-  font-size: 300%;
+  font-size: 500%;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 
 .linked-in-link {
-  margin-top: 5px;
+  margin-top: 25px;
 }
 
 .linked-in-link span {
@@ -31,14 +33,14 @@ table {
 
 #fadeText1 {
   display: block;
-  font-size: 300%;
+  font-size: 600%;
   position: relative;
-  top: 22;
+  top: 45;
 }
 
 #fadeText2 {
   display: block;
-  font-size: 300%;
+  font-size: 600%;
   position: relative;
-  top: -22;
+  top: -45;
 }
