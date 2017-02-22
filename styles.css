@@ -15,7 +15,7 @@ table {
 }
 
 .company-name {
-/*  font-size: 150%; */
+  font-size: 300%;
 }
 
 .linked-in-link {
@@ -27,19 +27,18 @@ table {
   top: -15;
   font-family: sans-serif;
   margin-right: 10px;
-  font-size: 75%;
 }
 
 #fadeText1 {
   display: block;
-  font-size: 150%;
+  font-size: 300%;
   position: relative;
-  top: 12;
+  top: 22;
 }
 
 #fadeText2 {
   display: block;
-  font-size: 150%;
+  font-size: 300%;
   position: relative;
-  top: -12;
+  top: -22;
 }
